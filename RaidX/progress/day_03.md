@@ -1,0 +1,1 @@
+today i solve one question, 121 Best Time To Buy Stock, which i have already solved earlier but this time i solved it with new approach.

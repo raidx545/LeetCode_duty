@@ -1,5 +1,3 @@
-package solutions.7_Reverse_Integer;
-
 class Solution {
     public int reverse(int x) {
         int reverse = 0;

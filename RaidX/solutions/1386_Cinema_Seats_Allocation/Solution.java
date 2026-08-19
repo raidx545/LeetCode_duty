@@ -2,12 +2,11 @@ import java.util.*;
 class Solution {
     public int maxNumberOfFamilies(int n, int[][] reservedSeats) {
         HashMap<Integer,ArrayList<Integer>> map = new HashMap<>();
-        for(int[] reservedSeat:reservedSeats){
-            map.put(reservedSeat[0],new ArrayList<>());
-        }
-        for(int[] reservedSeat:reservedSeats){
+        for(int[] reservedSeat : reservedSeats) {
             int row = reservedSeat[0];
             int seat = reservedSeat[1];
+
+            map.putIfAbsent(row, new ArrayList<>());
             map.get(row).add(seat);
         }
         int count = 0 ;
